@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="HW21:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/HW21_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="HW21/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HW21" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java-8.0.19" />
+          <element id="library" level="project" name="hibernate-release-5.4.15.Final" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,60 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css ";
+
+body {
+    font-family: PT Serif Caption, serif;
+    font-size: x-large;
+    color: rgba(148, 0, 32, 0.74);
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+h3 {
+    color: red;
+}
+
+h2 {
+    background-color: rgba(189, 20, 17, 0.16);
+    border-radius: 1px;
+    width: 550px;
+    padding: 20px;
+}
+
+.left-form {
+    float: left;
+    margin-left: 290px;
+    padding: 33px;
+    border-radius: 1px;
+    width: 250px;
+    height: 397px;
+    background-color: rgba(189, 20, 17, 0.16);
+}
+
+.right-form {
+    float: right;
+    margin-right: 290px;
+    padding: 44px;
+    border-radius: 1px;
+    width: 250px;
+    height: 375px;
+    background-color: rgba(189, 20, 17, 0.16);
+}
+
+input {
+    width: 98%;
+    background-color: rgba(199, 161, 194, 0.38);
+    border: 2px solid rgba(148, 0, 32, 0.2);
+}
+
+input[type=submit] {
+    width: 70%;
+    background-color: rgba(244, 186, 179, 0.43);
+    border-radius: 4px;
+    border: 2px solid rgba(148, 0, 32, 0.74);
+    color: rgba(148, 0, 32, 0.76);
+    padding: 5px;
+    font-size: 14px;
+    font-family: "PT Serif Caption", serif;
+    cursor: pointer;
+    margin: 12px 0;
+}

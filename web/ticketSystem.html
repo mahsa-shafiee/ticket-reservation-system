@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<center><h2>Ticket Reservation System</h2><br></center>
+
+<form class="left-form" action="BookTicket" method="POST">
+    Owner:<br><input type="text" name="owner" required><br>
+    Origin:<br><input type="text" name="origin" required><br>
+    Destination:<br><input type="text" name="destination" required><br>
+    Date:<br><input type="text" name="date" required><br>
+    Flight Number:<br><input type="number" name="flight_number" required><br>
+    <center><br><input type="submit" value="Book Ticket"></center>
+</form>
+
+<form class="right-form" method="GET"><br>
+    Ticket Id:<br><input type="text" name="id" required><br><br><br>
+    <center>
+        <input type="submit" value="Display Ticket" formaction="DisplayTicket"><br><br>
+        <input type="submit" value="Update Ticket" formaction="UpdateTicket"><br><br>
+        <input type="submit" value="Cancel Ticket" formaction="CancelTicket"><br><br>
+    </center>
+</form>
+
+</body>
+</html>
