@@ -1,10 +1,14 @@
-@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css ";
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+
+* {
+    color: #f1cdf1e8;
+}
 
 body {
-    font-family: PT Serif Caption, serif;
+    height: 100%;
+    font-family: 'Gentium Basic', serif;
     font-size: x-large;
-    color: rgba(148, 0, 32, 0.74);
-    background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+    background-color: #210720e6;
     background-size: cover;
     background-position: center center;
 }
@@ -14,47 +18,88 @@ h3 {
 }
 
 h2 {
-    background-color: rgba(189, 20, 17, 0.16);
+    background-color: #df97e4;
+    color: #740082e0;
+    border: 1px solid mediumaquamarine;
+    margin-top: 32px;
     border-radius: 1px;
-    width: 550px;
+    width: 765px;
+    box-shadow: 0 0 5px 1px #bd777e;
+    font-size: 46px;
+    letter-spacing: 2px;
+    font-weight: 600;
     padding: 20px;
+    margin-bottom: 31px;
 }
 
 .left-form {
+    box-shadow: 0 0 5px 1px #bd777e;
+    font-weight: 500;
+    border: 1px solid mediumaquamarine;
+    color: rgb(230 156 234);
     float: left;
-    margin-left: 290px;
-    padding: 33px;
+    margin-left: 257px;
+    padding: 27px;
+    padding-top: 18px;
     border-radius: 1px;
-    width: 250px;
-    height: 397px;
-    background-color: rgba(189, 20, 17, 0.16);
+    width: 366px;
+    height: 492px;
+    font-size: 26px;
+    background-color: rgb(54 32 53);
 }
 
 .right-form {
     float: right;
-    margin-right: 290px;
-    padding: 44px;
+    margin-right: 257px;
+    padding: 24px;
+    box-shadow: 0 0 5px 1px #bd777e;
+    font-weight: 500;
+    border: 1px solid mediumaquamarine;
+    color: rgb(230 156 234);
     border-radius: 1px;
-    width: 250px;
-    height: 375px;
-    background-color: rgba(189, 20, 17, 0.16);
+    width: 366px;
+    height: 492px;
+    font-size: 26px;
+    background-color: rgb(54 32 53);
 }
 
 input {
-    width: 98%;
-    background-color: rgba(199, 161, 194, 0.38);
-    border: 2px solid rgba(148, 0, 32, 0.2);
+    width: 312px;
+    height: 30px;
+    border: 1px solid mediumaquamarine;
+    background: #e69cea57;
+}
+
+input:hover {
+    background: rgb(155 104 156);
+    transform: scale(1.01);
+    transition: 1s;
 }
 
 input[type=submit] {
-    width: 70%;
-    background-color: rgba(244, 186, 179, 0.43);
     border-radius: 4px;
-    border: 2px solid rgba(148, 0, 32, 0.74);
     color: rgba(148, 0, 32, 0.76);
     padding: 5px;
-    font-size: 14px;
     font-family: "PT Serif Caption", serif;
     cursor: pointer;
     margin: 12px 0;
+    height: 43px;
+    width: 311px;
+    color: #83198e;
+    font-size: 17px;
+    background: #df97e4;
+    border: 1px solid #83198e;
+}
+
+input[type=submit]:hover {
+    border: 1px solid mediumaquamarine;
+    background: #f1a3f5;
+    transform: translate(0px, -1px);
+    transition: 0.5s;
+}
+
+#update-form {
+    margin-left: 550px;
+    margin-top: 126px;
+    transform: scale(1.2);
 }

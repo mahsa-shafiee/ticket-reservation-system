@@ -2,27 +2,31 @@
 <html>
 <head>
     <title>Ticket System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<center><h2>Ticket Reservation System</h2><br></center>
+<center><h2>Ticket Reservation System</h2></center>
 
 <form class="left-form" action="BookTicket" method="POST">
-    Owner:<br><input type="text" name="owner" required><br>
-    Origin:<br><input type="text" name="origin" required><br>
-    Destination:<br><input type="text" name="destination" required><br>
-    Date:<br><input type="text" name="date" required><br>
-    Flight Number:<br><input type="number" name="flight_number" required><br>
-    <center><br><input type="submit" value="Book Ticket"></center>
+    Owner:<br><input autocomplete="off" type="text" name="owner" required=""><br>
+    Origin:<br><input autocomplete="off" type="text" name="origin" required=""><br>
+    Destination:<br><input autocomplete="off" type="text" name="destination" required=""><br>
+    Date:<br><input autocomplete="off" type="text" name="date" required=""><br>
+    Flight Number:<br><input autocomplete="off" type="number" name="flight_number" required="">
+    <center><input type="submit" value="Book Ticket" style="margin-top: 24px"></center>
 </form>
 
 <form class="right-form" method="GET"><br>
-    Ticket Id:<br><input type="text" name="id" required><br><br><br>
+    Ticket Id:<br><input autocomplete="off" type="text" name="id" required=""><br><br>
     <center>
         <input type="submit" value="Display Ticket" formaction="DisplayTicket"><br><br>
         <input type="submit" value="Update Ticket" formaction="UpdateTicket"><br><br>
-        <input type="submit" value="Cancel Ticket" formaction="CancelTicket"><br><br>
+        <input type="submit" value="Cancel Ticket" formaction="CancelTicket">
     </center>
 </form>
 

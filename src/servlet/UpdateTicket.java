@@ -65,7 +65,7 @@ public class UpdateTicket extends HttpServlet {
         writer.println("<head>" +
                 "<title>Update Ticket</title>" +
                 "<link rel=\"stylesheet\" href=\"styles.css\">" +
-                "</head>");
+                "</head><body style=\"height:auto\">");
 
         int ticketId = Integer.parseInt(request.getParameter("id"));
         Ticket ticket = ticketDao.findById(ticketId);
@@ -74,15 +74,15 @@ public class UpdateTicket extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("id", ticketId);
 
-            writer.println("<form method=\"POST\">\n" +
+            writer.println("<form id=\"update-form\" method=\"POST\">\n" +
                     "       Owner:<br><input type=\"text\" name=\"owner\" required><br>\n" +
                     "       Origin:<br><input type=\"text\" name=\"origin\" required><br>\n" +
                     "       Destination:<br><input type=\"text\" name=\"destination\" required><br>\n" +
                     "       Date:<br><input type=\"text\" name=\"date\" required><br>\n" +
                     "       Flight Number:<br><input type=\"number\" name=\"flight_number\" required><br>\n" +
-                    "       <center><br><input type=\"submit\" value=\"Update Ticket\" formaction=\"UpdateTicket\">" +
-                    "       <center><br><input type=\"submit\" value=\"Cancel\" formaction=\"ticketSystem.html\" formnovalidate>" +
-                    "       </center></form>");
+                    "       <br><input type=\"submit\" value=\"Update Ticket\" formaction=\"UpdateTicket\">" +
+                    "       <br><input type=\"submit\" value=\"Cancel\" formaction=\"ticketSystem.html\" formnovalidate>" +
+                    "       </form>");
         } else {
 
             writer.println("<center><h3>There is no such ticket ID!</h3>");

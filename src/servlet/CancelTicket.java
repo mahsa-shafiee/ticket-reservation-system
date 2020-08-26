@@ -32,8 +32,8 @@ public class CancelTicket extends HttpServlet {
         boolean isSuccessFull = ticketDao.delete(id);
         if (isSuccessFull) {
             writer.println("<br><br><br><br><br>" +
-                    "<center><h1>SUCCESSFULLY CANCELED TICKET WITH ID " + id + ".</h1></center>" +
-                    "<br><br><a href=\"ticketSystem.html\">Back to home</a>");
+                    "<center><h1>SUCCESSFULLY CANCELED TICKET WITH ID " + id + ".</h1>" +
+                    "<br><br><a href=\"ticketSystem.html\">Back to home</a></center>");
         } else {
 
             writer.println("<center><h3>There is no such ticket ID!</h3>");
