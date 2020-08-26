@@ -24,7 +24,7 @@ public class CancelTicket extends HttpServlet {
         PrintWriter writer = response.getWriter();
         writer.println("<head>" +
                 "<title>Cancel Ticket</title>" +
-                "<link rel=\"stylesheet\" href=\"styles.css\">" +
+                "<link rel=\"stylesheet\" href=\"styles/styles.css\">" +
                 "</head>");
 
         int id = Integer.parseInt(request.getParameter("id"));

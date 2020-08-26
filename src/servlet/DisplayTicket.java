@@ -28,15 +28,15 @@ public class DisplayTicket extends HttpServlet {
         PrintWriter writer = response.getWriter();
         writer.println("<head>" +
                 "<title>Display Ticket</title>" +
-                "<link rel=\"stylesheet\" href=\"styles.css\">" +
-                "</head>");
+                "<link rel=\"stylesheet\" href=\"styles/styles.css\">" +
+                "</head><body style=\"transform: scale(0.85)\">");
 
         int ticketId = Integer.parseInt(request.getParameter("id"));
         Ticket ticket = ticketDao.findById(ticketId);
 
         if (ticket != null) {
 
-            writer.println("<center><h1>Ticket details</h1>");
+            writer.println("<center><h1 style=\"margin-top: -38px;\">Ticket details</h1>");
             writer.println("<h2>Ticket id: " + ticket.getId());
             writer.println("<br><br>Ticket owner: " + ticket.getOwner());
             writer.println("<br><br>Ticket origin: " + ticket.getOrigin());
@@ -57,7 +57,6 @@ public class DisplayTicket extends HttpServlet {
     private String formatDate(Date date) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
-        calendar.add(Calendar.DATE, 1);
         return new SimpleDateFormat("yyyy/MM/dd").format(calendar.getTime());
     }
 }

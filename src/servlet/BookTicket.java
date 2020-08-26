@@ -24,7 +24,7 @@ public class BookTicket extends HttpServlet {
         PrintWriter writer = response.getWriter();
         writer.println("<head>" +
                 "<title>Book Ticket</title>" +
-                "<link rel=\"stylesheet\" href=\"styles.css\">" +
+                "<link rel=\"stylesheet\" href=\"styles/styles.css\">" +
                 "</head>");
 
         String owner = request.getParameter("owner");

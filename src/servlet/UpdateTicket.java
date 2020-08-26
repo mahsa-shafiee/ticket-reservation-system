@@ -64,7 +64,7 @@ public class UpdateTicket extends HttpServlet {
         PrintWriter writer = response.getWriter();
         writer.println("<head>" +
                 "<title>Update Ticket</title>" +
-                "<link rel=\"stylesheet\" href=\"styles.css\">" +
+                "<link rel=\"stylesheet\" href=\"styles/styles.css\">" +
                 "</head><body style=\"height:auto\">");
 
         int ticketId = Integer.parseInt(request.getParameter("id"));

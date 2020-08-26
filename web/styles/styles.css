@@ -8,6 +8,7 @@ body {
     height: 100%;
     font-family: 'Gentium Basic', serif;
     font-size: x-large;
+    background-image: url("../images/sky.jpeg");
     background-color: #210720e6;
     background-size: cover;
     background-position: center center;
@@ -45,7 +46,6 @@ h2 {
     width: 366px;
     height: 492px;
     font-size: 26px;
-    background-color: rgb(54 32 53);
 }
 
 .right-form {
@@ -60,7 +60,6 @@ h2 {
     width: 366px;
     height: 492px;
     font-size: 26px;
-    background-color: rgb(54 32 53);
 }
 
 input {
